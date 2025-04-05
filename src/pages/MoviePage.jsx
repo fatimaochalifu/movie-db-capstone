@@ -1,10 +1,9 @@
-// src/pages/MoviePage.jsx
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MovieDetails from "../components/MovieDetails";
 
 const MoviePage = () => {
-  const { id } = useParams();
+  const { id } = useParams(); 
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -22,7 +21,7 @@ const MoviePage = () => {
 
   useEffect(() => {
     fetchMovieDetails();
-  }, [id]);
+  }, [id]); 
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">

@@ -1,5 +1,3 @@
-// src/api/fetchMovies.js
-
 export const fetchMovies = async (searchTerm) => {
     try {
       const response = await fetch(

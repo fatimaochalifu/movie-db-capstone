@@ -1,5 +1,4 @@
-// src/pages/Home.jsx
-import MovieCard from "../components/MovieCard"; // ✅ Add this line
+import MovieCard from "../components/MovieCard";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
@@ -18,20 +17,33 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <SearchBar onSearch={handleSearch} />
-      {loading ? (
-        <p className="text-center text-lg mt-10">Loading...</p>
-      ) : (
-        <MovieList
-          movies={movies}
-          renderMovie={(movie) => (
-            <Link to={`/movie/${movie.imdbID}`} key={movie.imdbID}>
-              <MovieCard movie={movie} />
-            </Link>
-          )}
-        />
-      )}
+    <div className="min-h-screen bg-gradient-to-b from-sky-100 to-white px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6">
+          🎬 Movie Explorer
+        </h1>
+        <SearchBar onSearch={handleSearch} />
+        {loading ? (
+          <p className="text-center text-lg mt-10 text-gray-600 animate-pulse">
+            Fetching awesome movies...
+          </p>
+        ) : (
+          <div className="mt-6">
+            <MovieList
+              movies={movies}
+              renderMovie={(movie) => (
+                <Link
+                  to={`/movie/${movie.imdbID}`}
+                  key={movie.imdbID}
+                  className="transition-transform hover:scale-105"
+                >
+                  <MovieCard movie={movie} />
+                </Link>
+              )}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
