@@ -19,13 +19,21 @@ Follow the steps below to run the project locally:
 Clone the repository:
 
 git clone https://github.com/fatimaochalifu/capstoneproject_moviedatabase.git
+
 cd capstoneproject_moviedatabase
+
 Install the project dependencies:
+
 npm install
+
 Start the development server:
+
 npm run dev
+
 Open your browser and go to:
+
 http://localhost:5173
+
 Features
 1. Browse a collection of movies
 
@@ -35,7 +43,6 @@ Responsive design using Tailwind CSS
 
 Screenshot
 ![alt text](image.png)
-
 
 
 Live Demo
