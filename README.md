@@ -26,9 +26,9 @@ npm run dev
 Open your browser and go to:
 http://localhost:5173
 Features
-Browse a collection of movies
+1. Browse a collection of movies
 
-View movie details
+2. View movie details
 
 Responsive design using Tailwind CSS
 
