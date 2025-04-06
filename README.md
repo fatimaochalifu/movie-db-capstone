@@ -1,4 +1,5 @@
 Movie Database Web Application
+
 This is the capstone project for the ALX Frontend Engineering course. It is a simple movie database web application built using React, Vite, and Tailwind CSS. The goal of the project is to demonstrate an understanding of modern frontend tools and practices, as well as responsive design.
 
 Technologies Used
@@ -32,7 +33,7 @@ Features
 
 Responsive design using Tailwind CSS
 
-Screenshots
+Screenshot
 ![alt text](image.png)
 
 
